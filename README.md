@@ -148,6 +148,62 @@ Por que foi escrito assim:
 - Nao confundir `.gitkeep` com arquivo de codigo; ele e apenas estrutural.
 ---
 
+## Aula02/index.html
+### O que esse codigo faz
+Esse arquivo monta uma pagina de perfil pessoal simples usando HTML semantico. Ele organiza cabecalho, secoes de conteudo e rodape, servindo como base para treino de estrutura e boas praticas.
+### Detalhe por detalhe
+- `<!doctype html>`: define HTML5.
+- `<html lang="pt-BR">`: idioma principal em portugues do Brasil.
+- `<meta charset="UTF-8">`: garante acentos e caracteres especiais.
+- `<meta name="viewport"...>`: melhora visualizacao em telas menores.
+- `<link rel="stylesheet" href="style.css">`: conecta o CSS externo.
+- `<header class="cabecalho-perfil">`: bloco principal de apresentacao.
+- `<main class="conteudo-pagina">`: conteudo central da pagina.
+- `<section>`: divide o conteudo em blocos ("Sobre mim", "O que estou aprendendo", "Contato").
+- `<ul>` e `<li>`: lista de topicos estudados.
+- `<a>` e `<button>`: acoes de contato.
+- `<footer>`: informacao final da pagina.
+
+Por que foi escrito assim:
+- Estrutura semantica melhora organizacao e legibilidade.
+- Classes com nomes claros facilitam estilizar no CSS.
+- Separacao de HTML e CSS ajuda a manter o projeto limpo.
+### O que eu aprendi
+- Como montar uma pagina completa com `header`, `main`, `section` e `footer`.
+- Como usar classes para controlar estilo no CSS.
+- Como organizar conteudo em blocos com objetivo claro.
+### Cuidado com isso
+- O texto "Sou apaixonado" esta no feminino/masculino misturado no contexto de "Maria Souza"; vale padronizar.
+- Links com `href="#"` sao placeholders e devem ser trocados por URLs reais depois.
+- Elementos de botao sem funcionalidade ainda sao apenas visuais sem JavaScript.
+---
+
+## Aula02/style.css
+### O que esse codigo faz
+Esse arquivo aplica o visual da pagina: reset basico, cores, alinhamento, espacamento e estilo de cabecalho, secoes e rodape.
+### Detalhe por detalhe
+- `* { margin: 0; padding: 0; box-sizing: border-box; ... }`: reset inicial e padrao de caixa.
+- `.cabecalho-perfil`: fundo, alinhamento e espacamento do topo.
+- `.cabecalho-perfil-avatar`: cria o circulo azul do avatar com `border-radius: 50%`.
+- `.cabecalho-perfil-avatar p`: centraliza o texto "MS" visualmente com `line-height`.
+- `.conteudo-pagina`: define bloco central com fundo cinza claro.
+- `.secao-sobre`: espacamento interno da primeira secao.
+- `.rodape-pagina`: estilo do rodape com cor de fundo e texto centralizado.
+
+Por que foi escrito assim:
+- Reset evita diferencas de estilo padrao entre navegadores.
+- Classes especificas deixam o CSS organizado por parte da tela.
+- Cores diferentes ajudam a visualizar cada bloco durante o aprendizado.
+### O que eu aprendi
+- Como aplicar box model com `padding`, `margin` e `box-sizing`.
+- Como criar avatar circular apenas com CSS.
+- Como separar estilos por componente da pagina.
+### Cuidado com isso
+- `display: inline` em `.conteudo-pagina` pode limitar controle de largura/altura; em muitos casos `block` e melhor.
+- A fonte global esta fixa em `Verdana`; em projetos reais, vale testar uma pilha tipografica mais moderna.
+- Algumas cores (`darkgray` com fundos claros) podem ter contraste baixo para acessibilidade.
+---
+
 ## Principais Atributos HTML
 
 Tabela de referencia rapida com atributos muito usados em HTML.
